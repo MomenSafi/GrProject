@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -17,8 +17,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Project.Models\Project.Models.csproj" />
-    <ProjectReference Include="..\Project.Utility\Project.Utility.csproj" />
+    <ProjectReference Include="..\Project.Models\BookWeb.Models.csproj" />
+    <ProjectReference Include="..\Project.Utility\BookWeb.Utility.csproj" />
   </ItemGroup>
 
 </Project>

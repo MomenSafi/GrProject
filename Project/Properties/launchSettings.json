@@ -9,7 +9,7 @@
   },
   "profiles": {
     "http": {
-      "commandName": "Project",
+      "commandName": "BookWeb",
       "dotnetRunMessages": true,
       "launchBrowser": true,
       "applicationUrl": "http://localhost:5179",
@@ -18,7 +18,7 @@
       }
     },
     "https": {
-      "commandName": "Project",
+      "commandName": "BookWeb",
       "dotnetRunMessages": true,
       "launchBrowser": true,
       "applicationUrl": "https://localhost:7285;http://localhost:5179",
