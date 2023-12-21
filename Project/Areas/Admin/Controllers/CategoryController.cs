@@ -3,8 +3,9 @@ using BookWeb.DataAccess.Data;
 using BookWeb.DataAccess.Repository.IRepository;
 using BookWeb.Models;
 
-namespace BookWeb.Controllers
+namespace BookWeb.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class CategoryController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -39,7 +40,7 @@ namespace BookWeb.Controllers
             {
                 return NotFound();
             }
-            Category? categoryFromDb = _unitOfWork.Category.Get(u=>u.Id == id);
+            Category? categoryFromDb = _unitOfWork.Category.Get(u => u.Id == id);
             //Category? categoryFromDb1 = _db.Categories.FirstOrDefault(u => u.Id == id);
             //Category? categoryFromDb2 = _db.Categories.Where(u => u.Id == id).FirstOrDefault();
 
@@ -69,7 +70,7 @@ namespace BookWeb.Controllers
             {
                 return NotFound();
             }
-            Category? categoryFromDb = _unitOfWork.Category.Get(u=>u.Id==id);
+            Category? categoryFromDb = _unitOfWork.Category.Get(u => u.Id == id);
             //Category? categoryFromDb1 = _db.Categories.FirstOrDefault(u=>u.Id==id);
             //Category? categoryFromDb2 = _db.Categories.Where(u=>u.Id==id).FirstOrDefault();
 
